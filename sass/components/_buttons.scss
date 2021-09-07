@@ -1,0 +1,42 @@
+.btn {
+  // Removing default styles of button
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  outline: none;
+
+  &-green,
+  &-vulcan {
+    color: $color-white;
+    &--ghost {
+      //   box-sizing: content-box;
+      color: $color-primary-light;
+      border: 1px solid $color-primary-light;
+    }
+
+    &--full {
+      width: 100%;
+      padding: 2rem 0;
+    }
+    &--medium {
+      width: 30rem;
+      padding: 2rem 0;
+    }
+    &--small {
+    }
+
+    &--dark {
+      background-color: $color-primary-dark;
+    }
+
+    &--light {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &-vulcan {
+    &--dark {
+      background-color: $color-vulcan;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.mainhero {
+  padding: 0 2rem 0 2rem;
+
+  @media only screen and (max-width: 1100px) {
+    // padding: 10rem 5rem 0 5rem;
+  }
+
+  @media only screen and (max-width: 650px) {
+    // padding: 7rem 3rem 0 3rem;
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 120rem;
+    text-align: center;
+
+    & > * {
+      margin-bottom: 4rem;
+    }
+  }
+  &__heading {
+    max-width: 80rem;
+    margin: 10rem auto 5rem auto;
+  }
+  &__video {
+  }
+  &__buttons {
+    text-align: center;
+    margin: 0 10rem;
+    & > * {
+      margin: 1rem;
+    }
+  }
+}
+
+.overview {
+  text-align: center;
+  background-image: url(./../../img/overview-bg.svg);
+  background-size: cover;
+  padding: 30rem 0 10rem 0;
+
+  &__content {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: 650px) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.maindesc {
+  max-width: 120rem;
+  margin: 10rem auto;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    text-align: center;
+
+    div {
+      flex-basis: 60rem;
+
+      @media only screen and (max-width: 1000px) {
+        flex-basis: 82rem;
+      }
+    }
+
+    figure {
+      flex-basis: 50rem;
+
+      @media only screen and (max-width: 1000px) {
+        flex-basis: 35rem;
+        margin-bottom: 8rem;
+      }
+
+      @media only screen and (max-width: 650px) {
+        flex-basis: 30rem;
+      }
+    }
+  }
+  &__features {
+    padding: 1rem 4rem;
+    list-style: none;
+  }
+  &__feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 2rem;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 106.25%;
+      color: #13161f;
+    }
+  }
+  &__img {
+    display: flex;
+
+    img {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  &__paragraph {
+    // background-color: crimson;
+    padding: 0 4rem;
+    margin-bottom: 7rem;
+    font-size: 125%;
+    text-align: left;
+    color: #4d5060;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  &__btn {
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem 2rem 3rem;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  &__logo {
+    margin: 2rem 0 0 0;
+    @media only screen and (max-width: 900px) {
+      margin: 2rem 0 0 0;
+    }
+
+    img {
+      width: 14rem;
+    }
+  }
+  &__nav {
+    width: 61.2rem;
+    display: flex;
+    justify-content: space-around;
+    // order: 1;
+    margin: 0 auto;
+    margin: 2rem 0 0 0;
+
+    @media only screen and (max-width: 860px) {
+      order: 1;
+      margin: 2rem auto;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    &-lang {
+      text-decoration: none;
+
+      margin: 2rem 0 0 0;
+      @media only screen and (max-width: 900px) {
+        margin: 2rem 0 0 0;
+      }
+    }
+  }
+}

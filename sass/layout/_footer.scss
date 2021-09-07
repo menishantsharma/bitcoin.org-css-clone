@@ -1,0 +1,72 @@
+.footer {
+  background-image: url(../../img/footer-bg.svg);
+  background-color: $color-vulcan;
+  color: #9d9d9d;
+  padding-top: 10rem;
+  &__logo {
+    margin: 0 auto;
+    width: 10rem;
+  }
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10rem 0;
+    padding: 10rem 5rem 0 5rem;
+    // text-align: center;
+  }
+
+  &__donation {
+    color: #fff;
+    // text-align: center;
+    margin: 10rem;
+    margin-top: 0;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80rem;
+  }
+  &__list {
+    list-style: none;
+    &-title {
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+  }
+
+  &__copyright {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 10rem;
+    &-text {
+      min-width: 20rem;
+    }
+    &-extras {
+      min-width: 20rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
